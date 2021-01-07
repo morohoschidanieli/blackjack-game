@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <div class='text-box'>
+            <div class='close-container'>
+                <p id='info-text'>Player wins!</p>
+                <p id='restart-text'>Press F5 to play again!</p><br>
+                <button id='ok-button'>OK</button>
+            </div>
+    </div>
+    <div class='container'>
+        
+    <h1 class='title'>Blackjack game</h1>
+    <p class='score-text'>Score: <span id='span-score'></span></p>
+    <button  onClick="refreshPage()" id='restart-button'>Restart score</button>
+    <div class='card-container'>
+        <div class='imagini'>
+            <p id='show'>Dealer: <span id='points-computer'>?</span></p>
+            <img id='carti-inceput' src='carti/back_cards-07.png'>
+    </div>
+    <br><br>
+    <div class='imagini2'>
+        <p id='show'>Player: <span id='points-player'>0</span></p>
+    </div>
+        <br><br>
+        <button class='start'>Hit me!</button>
+        <button class='stay'>Stay!</utton>
+    </div>
+</div>
+    <script src='script.js'></script>
+</body>
+</html>
